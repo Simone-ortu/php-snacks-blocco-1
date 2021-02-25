@@ -2,10 +2,10 @@
 $mail = $_GET['mail'];
 $name = $_GET['name'];
 $age = $_GET['age'];
-if((empty($nome) || empty($email) || empty($eta))){
+if((empty($name) || empty($email) || empty($eta))){
     $message = 'Inserire i dati richiesti';
 }
-elseif(strlen($nome) >= 3 && strlen($email) >= 3 && is_numeric($eta)){
+elseif(strlen($name) >= 3 && strlen($email) >= 3 && is_numeric($eta)){
     if(strpos($email, '@')  && strpos($email, '.')){
         $message = 'Accesso riuscito';
     }
